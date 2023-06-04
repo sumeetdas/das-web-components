@@ -20,7 +20,8 @@ export default class DasLayoutCenter extends LitElement {
         slot { 
             display: grid;
             grid-area: content;
-
+            justify-content: center;
+            align-content: start;
         }
     `;
 

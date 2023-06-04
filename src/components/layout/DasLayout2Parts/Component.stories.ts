@@ -5,7 +5,7 @@ import { html } from 'lit';
  
 // More on how to set up stories at: https://storybook.js.org/docs/web-components/writing-stories/introduction
 const meta: Meta = {
-  title: 'DasWebComponents/DasLayout2Parts',
+  title: 'DasWebComponents/Layout/DasLayout2Parts',
   tags: ['autodocs'],
   render: () => html`
     <das-layout-2parts>
