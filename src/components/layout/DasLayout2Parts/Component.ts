@@ -8,7 +8,7 @@ import { unsafeHTML } from 'lit/directives/unsafe-html.js';
  * one for header and one for content
  */
 @customElement('das-layout-2parts')
-export default class DasLayoutHeaderContent extends LitElement {
+export default class DasLayout2Parts extends LitElement {
     static override styles = css`
         :host {
             display: grid;
@@ -21,11 +21,11 @@ export default class DasLayoutHeaderContent extends LitElement {
               "header"
               "content";
         }
-        slot[name="das-header"] { 
+        slot[name="x-header"] { 
             display: grid;
             grid-area: header;
         }
-        slot[name="das-content"] { 
+        slot[name="x-content"] { 
             display: grid;
             grid-area: content;
         }
@@ -46,11 +46,11 @@ export default class DasLayoutHeaderContent extends LitElement {
     }
 
     getHeaderSlot(): TemplateResult<1> | string {
-        return this.getSlot("das-header");
+        return this.getSlot("x-header");
     }
 
     getContentSlot(): TemplateResult<1> | string {
-        return this.getSlot("das-content");
+        return this.getSlot("x-content");
     }
 
     override render() {

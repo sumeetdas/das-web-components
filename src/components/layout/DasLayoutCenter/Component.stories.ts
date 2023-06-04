@@ -4,11 +4,11 @@ import { html } from 'lit';
  
 // More on how to set up stories at: https://storybook.js.org/docs/web-components/writing-stories/introduction
 const meta: Meta = {
-  title: 'DasWebComponents/DasHorizontalLayoutCentered',
+  title: 'DasWebComponents/DasLayoutCenter',
   tags: ['autodocs'],
   render: () => html`
-    <das-hlayout-center>
-        <h1>DasHorizontalLayoutCentered</h1>
+    <das-layout-center>
+        <h1>DasLayoutCenter</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Nulla convallis libero in dui finibus, sit amet malesuada
@@ -19,7 +19,7 @@ const meta: Meta = {
 
             <button>Click me</button>
         </p>
-    </das-hlayout-center>
+    </das-layout-center>
     `,
 };
 
