@@ -10,3 +10,6 @@ web-test-runner.config.js
 main.js
 bundle.js
 /src_js
+.expo
+.storybook
+storybook-static
